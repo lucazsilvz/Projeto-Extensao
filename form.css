@@ -92,3 +92,7 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+form + p {
+    margin-top: 20px;
+}
