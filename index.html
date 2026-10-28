@@ -1,11 +1,417 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
+    <!-- Define os caracteres e a adaptação para celulares -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GasSafe.</title>
+
+    <!-- Título que aparece na aba do navegador -->
+    <title>GasSafe | Segurança e Detecção de Gás</title>
+
+    <!-- Conecta o arquivo CSS ao HTML -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Conecta o JavaScript externo -->
+    <script src="script.js" defer></script>
 </head>
+
 <body>
-    
+
+    <!-- CABEÇALHO E MENU DE NAVEGAÇÃO -->
+    <header>
+        <nav class="menu">
+            <!-- Nome da empresa -->
+            <a href="#inicio" class="logo">Gas<span>Safe</span></a>
+
+            <!-- Links para as seções do site -->
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#empresa">Empresa</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- APRESENTAÇÃO PRINCIPAL -->
+    <main>
+
+        <section id="inicio" class="inicio">
+            <div class="inicio-texto">
+                <p class="subtitulo">TECNOLOGIA • PROTEÇÃO • CONFIANÇA</p>
+
+                <h1>Mais segurança para você e seu ambiente.</h1>
+
+                <p>
+                    A GasSafe desenvolve soluções de detecção de gases
+                    para ajudar a identificar possíveis vazamentos
+                    em residências, comércios e indústrias.
+                </p>
+
+                <!-- Botão que leva até os produtos -->
+                <a href="#produtos" class="botao">Conheça nossos produtos</a>
+            </div>
+
+            <!-- Imagem ilustrativa relacionada à tecnologia -->
+            <div class="inicio-imagem">
+                <img
+                    src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1000&q=80"
+                    alt="Ambiente de tecnologia e equipamentos eletrônicos">
+            </div>
+        </section>
+
+        <!-- IMAGENS ILUSTRATIVAS SOBRE A TECNOLOGIA -->
+        <section class="faixa-imagens">
+            <div>
+                <img
+                    src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=700&q=80"
+                    alt="Equipamentos e componentes tecnológicos">
+                <p>Tecnologia</p>
+            </div>
+
+            <div>
+                <img
+                    src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=700&q=80"
+                    alt="Profissional trabalhando com tecnologia">
+                <p>Inovação</p>
+            </div>
+
+            <div>
+                <img
+                    src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&w=700&q=80"
+                    alt="Trabalho técnico com equipamentos">
+                <p>Segurança</p>
+            </div>
+        </section>
+
+        <!-- SOBRE A EMPRESA -->
+        <section id="empresa" class="secao">
+            <div class="titulo-secao">
+                <p class="subtitulo">CONHEÇA A GASSAFE</p>
+                <h2>Sobre nossa empresa</h2>
+            </div>
+
+            <div class="sobre-conteudo">
+
+                <!-- Texto de apresentação da empresa -->
+                <div class="sobre-texto">
+                    <h3>Quem somos?</h3>
+
+                    <p>
+                        A GasSafe é uma empresa fictícia desenvolvida
+                        para um projeto acadêmico, com foco na fabricação
+                        de sensores e detectores de gás.
+                    </p>
+
+                    <p>
+                        Nossas soluções são pensadas para residências,
+                        estabelecimentos comerciais e ambientes industriais,
+                        contribuindo para a identificação de possíveis
+                        vazamentos e situações de risco.
+                    </p>
+
+                    <h3>Nossa história</h3>
+
+                    <p>
+                        A GasSafe surgiu da ideia de utilizar a tecnologia
+                        para ampliar a segurança das pessoas. A empresa
+                        foi idealizada em um projeto acadêmico de
+                        Análise e Desenvolvimento de Sistemas.
+                    </p>
+
+                    <!-- Data ilustrativa, que pode ser alterada -->
+                    <p>
+                        <strong>Criação:</strong> 2026, como parte
+                        do desenvolvimento do projeto acadêmico.
+                    </p>
+
+                    <h3>Objetivo da empresa</h3>
+
+                    <p>
+                        Desenvolver soluções de detecção de gases que
+                        ajudem a identificar situações potencialmente
+                        perigosas e contribuam para a prevenção de
+                        acidentes.
+                    </p>
+                </div>
+
+                <!-- Imagem ilustrativa da área tecnológica -->
+                <div class="sobre-imagem">
+                    <img
+                        src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=900&q=80"
+                        alt="Equipamentos usados em atividades técnicas">
+                </div>
+
+            </div>
+        </section>
+
+        <!-- MISSÃO, VISÃO E VALORES -->
+        <section class="secao principios">
+            <div class="titulo-secao">
+                <p class="subtitulo">NOSSO COMPROMISSO</p>
+                <h2>Missão, visão e valores</h2>
+            </div>
+
+            <div class="grade-principios">
+
+                <!-- Missão da empresa -->
+                <article class="cartao-principio">
+                    <img
+                        src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=600&q=80"
+                        alt="Tecnologia aplicada à segurança">
+
+                    <div class="cartao-conteudo">
+                        <h3>Missão</h3>
+                        <p>
+                            Criar soluções tecnológicas que ajudem
+                            a identificar vazamentos de gás e
+                            contribuam para a proteção das pessoas.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Visão da empresa -->
+                <article class="cartao-principio">
+                    <img
+                        src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80"
+                        alt="Placa eletrônica e componentes">
+
+                    <div class="cartao-conteudo">
+                        <h3>Visão</h3>
+                        <p>
+                            Ser reconhecida pela proposta de inovação
+                            e pelo desenvolvimento de tecnologias
+                            voltadas à segurança.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Valores da empresa -->
+                <article class="cartao-principio">
+                    <img
+                        src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80"
+                        alt="Profissional realizando atividade técnica">
+
+                    <div class="cartao-conteudo">
+                        <h3>Valores</h3>
+                        <p>
+                            Responsabilidade, qualidade, inovação,
+                            transparência e compromisso com a
+                            segurança dos clientes.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE PRODUTOS -->
+        <section id="produtos" class="secao">
+            <div class="titulo-secao">
+                <p class="subtitulo">SOLUÇÕES GASSAFE</p>
+                <h2>Nossos produtos</h2>
+
+                <p>
+                    Conheça exemplos de aplicações dos detectores
+                    de gás para diferentes ambientes.
+                </p>
+            </div>
+
+            <div class="grade-produtos">
+
+                <!-- Produto para residências -->
+                <article class="cartao-produto">
+                    <img
+                        src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
+                        alt="Residência onde um detector de gás pode ser utilizado">
+
+                    <div class="produto-conteudo">
+                        <span class="etiqueta">Residencial</span>
+                        <h3>Detector de gás residencial</h3>
+
+                        <p>
+                            Solução destinada a ajudar na identificação
+                            de possíveis vazamentos em casas e apartamentos.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Produto para comércios -->
+                <article class="cartao-produto">
+                    <img
+                        src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80"
+                        alt="Cozinha que representa um ambiente comercial">
+
+                    <div class="produto-conteudo">
+                        <span class="etiqueta">Comercial</span>
+                        <h3>Detector para comércios</h3>
+
+                        <p>
+                            Aplicação proposta para cozinhas comerciais,
+                            restaurantes e outros estabelecimentos
+                            que utilizam gás.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Produto para indústrias -->
+                <article class="cartao-produto">
+                    <img
+                        src="https://images.unsplash.com/photo-1567789884554-0b844b597180?auto=format&fit=crop&w=800&q=80"
+                        alt="Ambiente industrial">
+
+                    <div class="produto-conteudo">
+                        <span class="etiqueta">Industrial</span>
+                        <h3>Detector para indústrias</h3>
+
+                        <p>
+                            Proposta de aplicação para ambientes industriais
+                            que necessitam monitorar possíveis riscos
+                            relacionados à presença de gases.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Imagem complementar relacionada à engenharia -->
+            <div class="imagem-complementar">
+                <img
+                    src="https://images.unsplash.com/photo-1581092335878-2d9ff86ca2bf?auto=format&fit=crop&w=1200&q=80"
+                    alt="Equipamentos e trabalho de engenharia">
+
+                <div class="legenda-imagem">
+                    <h3>Tecnologia a favor da prevenção</h3>
+                    <p>
+                        A detecção de gases pode contribuir para
+                        a identificação de riscos e a adoção de
+                        medidas de segurança.
+                    </p>
+                </div>
+            </div>
+            </p>
+        </section>
+
+        <!-- FORMULÁRIO DE CONTATO -->
+        <section id="contato" class="secao contato">
+            <div class="titulo-secao">
+                <p class="subtitulo">FALE CONOSCO</p>
+                <h2>Entre em contato</h2>
+
+                <p>
+                    Preencha o formulário para registrar sua mensagem
+                    e informar seus dados de contato.
+                </p>
+            </div>
+
+            <!-- O JavaScript controla a validação deste formulário -->
+            <form id="formContato">
+
+                <!-- Nome do cliente -->
+                <label for="nome">Nome completo:</label>
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Digite seu nome"
+                    required
+                    minlength="3">
+
+                <!-- E-mail do cliente -->
+                <label for="email">E-mail:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="exemplo@email.com"
+                    required>
+
+                <!-- Telefone para contato -->
+                <label for="telefone">Telefone:</label>
+                <input
+                    type="tel"
+                    id="telefone"
+                    name="telefone"
+                    placeholder="(11) 99999-9999"
+                    required>
+
+                <!-- CEP usado na consulta à API ViaCEP -->
+                <label for="cep">CEP:</label>
+                <input
+                    type="text"
+                    id="cep"
+                    name="cep"
+                    placeholder="00000-000"
+                    inputmode="numeric"
+                    maxlength="9"
+                    required>
+
+                <!-- Mensagem de resultado da consulta de CEP -->
+                <p id="mensagemCep" aria-live="polite"></p>
+
+                <!-- Campos preenchidos pela API -->
+                <label for="rua">Rua:</label>
+                <input
+                    type="text"
+                    id="rua"
+                    name="rua"
+                    placeholder="Rua"
+                    required>
+
+                <label for="bairro">Bairro:</label>
+                <input
+                    type="text"
+                    id="bairro"
+                    name="bairro"
+                    placeholder="Bairro"
+                    required>
+
+                <label for="cidade">Cidade:</label>
+                <input
+                    type="text"
+                    id="cidade"
+                    name="cidade"
+                    placeholder="Cidade"
+                    required>
+
+                <label for="estado">Estado:</label>
+                <input
+                    type="text"
+                    id="estado"
+                    name="estado"
+                    placeholder="UF"
+                    maxlength="2"
+                    required>
+
+                <!-- Mensagem do cliente -->
+                <label for="mensagem">Sua mensagem:</label>
+                <textarea
+                    id="mensagem"
+                    name="mensagem"
+                    placeholder="Escreva sua mensagem..."
+                    required
+                    minlength="5"></textarea>
+
+                <!-- Botão para enviar o formulário -->
+                <button type="submit" class="botao">
+                    Enviar mensagem
+                </button>
+
+                <!-- Mensagem exibida pelo JavaScript -->
+                <p id="mensagemFormulario" aria-live="polite"></p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ DO SITE -->
+    <footer>
+        <p><strong>GasSafe</strong> — Segurança e tecnologia.</p>
+        <p>Projeto acadêmico de Análise e Desenvolvimento de Sistemas.</p>
+        <p>&copy; 2026 GasSafe. Todos os direitos reservados.</p>
+    </footer>
+
 </body>
 </html>

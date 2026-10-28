@@ -1,0 +1,587 @@
+/* ========================================
+   1. CONFIGURAÇÕES GERAIS
+   ======================================== */
+
+/* Remove margens padrão e facilita o dimensionamento */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Rolagem suave entre as seções */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilo geral da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #292929;
+    line-height: 1.6;
+}
+
+/* Impede que as imagens ultrapassem seus espaços */
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+/* ========================================
+   2. CABEÇALHO E MENU
+   ======================================== */
+
+header {
+    background-color: #202020;
+    padding: 18px 8%;
+}
+
+/* Organiza o logotipo e os links */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Logotipo da GasSafe */
+.logo {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #ff642d;
+}
+
+/* Organiza os links do menu */
+.menu ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.menu ul a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu ul a:hover {
+    color: #ff642d;
+}
+
+
+/* ========================================
+   3. APRESENTAÇÃO INICIAL
+   ======================================== */
+
+.inicio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 65px 8%;
+    color: white;
+
+    /* Cores inspiradas no fogo */
+    background: linear-gradient(
+        120deg,
+        #202020,
+        #702b20,
+        #e34b20
+    );
+}
+
+/* Área do texto inicial */
+.inicio-texto {
+    flex: 1;
+}
+
+/* Título principal */
+.inicio h1 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin: 15px 0;
+}
+
+/* Parágrafo inicial */
+.inicio p {
+    margin-bottom: 20px;
+}
+
+/* Texto pequeno acima dos títulos */
+.subtitulo {
+    color: #e34b20;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Mantém o subtítulo inicial legível no fundo escuro */
+.inicio .subtitulo {
+    color: #ffd0bd;
+}
+
+/* Imagem principal */
+.inicio-imagem {
+    flex: 1;
+}
+
+.inicio-imagem img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px #00000040;
+}
+
+
+/* ========================================
+   4. BOTÕES
+   ======================================== */
+
+.botao {
+    display: inline-block;
+    background-color: #e94e20;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #bd3512;
+    transform: translateY(-2px);
+}
+
+
+/* ========================================
+   5. FAIXA DE IMAGENS
+   ======================================== */
+
+.faixa-imagens {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 35px 8%;
+    background-color: white;
+}
+
+.faixa-imagens div {
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    text-align: center;
+    box-shadow: 0 3px 12px #00000012;
+}
+
+.faixa-imagens img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.faixa-imagens img:hover {
+    transform: scale(1.04);
+}
+
+.faixa-imagens p {
+    padding: 10px;
+    font-weight: bold;
+    color: #c9431d;
+}
+
+
+/* ========================================
+   6. SEÇÕES GERAIS
+   ======================================== */
+
+.secao {
+    padding: 60px 8%;
+}
+
+/* Títulos das seções */
+.titulo-secao {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.titulo-secao h2 {
+    font-size: 32px;
+    margin-top: 5px;
+    color: #292929;
+}
+
+.titulo-secao > p:last-child {
+    max-width: 750px;
+    margin: 12px auto 0;
+}
+
+
+/* ========================================
+   7. SOBRE A EMPRESA
+   ======================================== */
+
+.sobre-conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 35px;
+}
+
+.sobre-texto h3 {
+    color: #d9471d;
+    margin: 20px 0 8px;
+}
+
+.sobre-texto h3:first-child {
+    margin-top: 0;
+}
+
+/* Imagem da seção Sobre */
+.sobre-imagem img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px #00000020;
+}
+
+
+/* ========================================
+   8. MISSÃO, VISÃO E VALORES
+   ======================================== */
+
+.principios {
+    background-color: #fff0e9;
+}
+
+.grade-principios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Cartões das três áreas */
+.cartao-principio {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px #00000012;
+    transition: 0.3s;
+}
+
+.cartao-principio:hover {
+    transform: translateY(-5px);
+}
+
+/* Imagens dos cartões */
+.cartao-principio img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+/* Texto dos cartões */
+.cartao-conteudo {
+    padding: 22px;
+}
+
+.cartao-conteudo h3 {
+    color: #e34b20;
+    margin-bottom: 10px;
+}
+
+
+/* ========================================
+   9. PRODUTOS
+   ======================================== */
+
+.grade-produtos {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+/* Cartões dos produtos */
+.cartao-produto {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px #00000015;
+    transition: 0.3s;
+}
+
+.cartao-produto:hover {
+    transform: translateY(-5px);
+}
+
+/* Imagens dos produtos */
+.cartao-produto img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Texto de cada produto */
+.produto-conteudo {
+    padding: 22px;
+}
+
+.produto-conteudo h3 {
+    margin: 10px 0;
+    color: #d9471d;
+}
+
+/* Etiquetas Residencial, Comercial e Industrial */
+.etiqueta {
+    display: inline-block;
+    background-color: #fff0e9;
+    color: #b63816;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* Imagem grande abaixo dos produtos */
+.imagem-complementar {
+    position: relative;
+    margin-top: 35px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.imagem-complementar > img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+/* Texto sobre a imagem complementar */
+.legenda-imagem {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 35px;
+    color: white;
+    background: linear-gradient(
+        90deg,
+        #000000c9,
+        #00000020
+    );
+}
+
+.legenda-imagem h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.legenda-imagem p {
+    max-width: 550px;
+}
+
+/* ========================================
+   10. CONTATO E FORMULÁRIO
+   ======================================== */
+
+.contato {
+    background-color: #eeeeee;
+}
+
+/* Imagem acima do formulário */
+.imagem-contato {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+/* Caixa do formulário */
+#formContato {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px #00000012;
+}
+
+/* Rótulos dos campos */
+#formContato label {
+    display: block;
+    margin: 15px 0 6px;
+    font-weight: bold;
+}
+
+/* Campos de texto e mensagem */
+#formContato input,
+#formContato textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+/* Destaque do campo selecionado */
+#formContato input:focus,
+#formContato textarea:focus {
+    outline: 2px solid #ff642d;
+    border-color: #ff642d;
+}
+
+/* Campo de mensagem */
+#formContato textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Botão do formulário */
+#formContato button {
+    margin-top: 20px;
+}
+
+/* Mensagens exibidas pelo JavaScript */
+#mensagemCep,
+#mensagemFormulario {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* ========================================
+   11. RODAPÉ
+   ======================================== */
+
+footer {
+    background-color: #202020;
+    color: white;
+    text-align: center;
+    padding: 25px 8%;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+
+/* ========================================
+   12. ADAPTAÇÃO PARA CELULARES
+   ======================================== */
+
+@media (max-width: 768px) {
+
+    /* Organiza o cabeçalho verticalmente */
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu ul {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    /* Coloca texto e imagem inicial um abaixo do outro */
+    .inicio {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 45px 6%;
+    }
+
+    .inicio h1 {
+        font-size: 32px;
+    }
+
+    .inicio-imagem img {
+        height: 250px;
+    }
+
+    /* Ajusta as margens das seções */
+    .secao {
+        padding: 40px 6%;
+    }
+
+    .titulo-secao h2 {
+        font-size: 27px;
+    }
+
+    /* Organiza as imagens em uma coluna */
+    .faixa-imagens,
+    .sobre-conteudo,
+    .grade-principios,
+    .grade-produtos {
+        grid-template-columns: 1fr;
+    }
+
+    .faixa-imagens img {
+        height: 220px;
+    }
+
+    .sobre-imagem img {
+        height: 260px;
+    }
+
+    .cartao-principio img,
+    .cartao-produto img {
+        height: 230px;
+    }
+
+    .imagem-complementar > img {
+        height: 300px;
+    }
+
+    .legenda-imagem {
+        padding: 20px;
+    }
+
+    .legenda-imagem h3 {
+        font-size: 23px;
+    }
+
+    #formContato {
+        padding: 20px;
+    }
+}
+
+/* Ajustes para telas muito pequenas */
+@media (max-width: 400px) {
+    .logo {
+        font-size: 25px;
+    }
+
+    .menu ul {
+        gap: 9px;
+    }
+
+    .menu ul a {
+        font-size: 14px;
+    }
+
+    .inicio h1 {
+        font-size: 28px;
+    }
+
+    .legenda-imagem h3 {
+        font-size: 20px;
+    }
+}
