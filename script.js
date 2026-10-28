@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
         try {
             // Faz a requisição para a API ViaCEP
             const resposta = await fetch(
-                https://viacep.com.br/ws/${cep}/json/
+                `https://viacep.com.br/ws/${cep}/json/`
             );
 
             // Verifica se a requisição foi respondida
